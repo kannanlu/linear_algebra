@@ -3,9 +3,9 @@
 #include <cmath>
 
 Vector::Vector(const Vector& other_vector) {
-    n = other_vector.get_size();
-    data = new double [n];
-    for (int ii=0; ii<n; ii++) {
+    size = other_vector.get_size();
+    data = new double [size];
+    for (int ii=0; ii<size; ii++) {
         data[ii] = other_vector.data[ii];
     }
 }
